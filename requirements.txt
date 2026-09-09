@@ -1,0 +1,6 @@
+pymupdf
+requests
+pyyaml
+scikit-learn
+openpyxl
+pyzotero

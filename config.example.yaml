@@ -1,0 +1,21 @@
+# PaperHunter Agent 配置示例 —— 复制为 config.yaml 后填写
+
+zotero:
+  # Zotero Web API 凭证：https://www.zotero.org/settings/keys 创建
+  # library_id 是你的 userID（数字，见 https://www.zotero.org/settings/keys 页面 "Your userID"）
+  library_id: ""
+  library_type: "user"        # user 或 group
+  api_key: ""
+
+llm:
+  # 可选：OpenAI 兼容接口（用于生成更高质量的笔记内容：大意/精读略读建议/思考点）
+  # 不配置则使用内置离线启发式生成，全流程仍可用
+  base_url: ""                # 例如 https://api.openai.com/v1
+  api_key: ""
+  model: ""                   # 例如 gpt-4o-mini
+
+# Unpaywall 查询开放获取 PDF 需要留一个邮箱（礼貌池），建议填写
+unpaywall_email: ""
+
+download_pdfs: true           # 是否下载开放获取 PDF 原文
+max_pdf_mb: 50                # 单个 PDF 大小上限
